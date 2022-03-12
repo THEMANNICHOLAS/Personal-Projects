@@ -24,7 +24,7 @@ print("Do you want to continue? Type 'Y' for yes or 'N' for no.\n")
 toContinue = str(input())
 toContinue = toContinue.upper()
 
-while toContinue != "Y" and toContinue == "N":
+while toContinue != "Y" and toContinue != "N":
     print("That is not a valid value. Please try again\n")
     toContinue = input("Do you want to continue? Type 'Y' for yes or 'N' for no.\n")
     toContinue = toContinue.upper()
