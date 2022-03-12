@@ -4,7 +4,7 @@ try:
     userNumber = int(userNumber)
 except:
     print("An Error has occured.")
-
+    sys.exit()
 
 if userNumber == "0":
     sys.exit()
