@@ -1,10 +1,6 @@
 import sys
 userNumber = input("Type in whatver number you want, as many as you want whether negative or positive\nType '0' to cancel.\n")
-try:
-    userNumber = int(userNumber)
-except:
-    print("An Error has occured.")
-    sys.exit()
+
 
 if userNumber == "0":
     sys.exit()
