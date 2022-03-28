@@ -71,17 +71,20 @@ def deptWages(DeptNumber, hours, hourlySalary, deptSalary):
 def printTotalSalary(deptSalary):
     print(deptSalary)
  
-again = "Y"
-dept = 0
-while again.upper() == "Y":
-    print("You will need to enter the employee's department number, hours worked and hourly salary")
-    printDeptList(deptSalary, deptList)     
-    #Get valid input
-    validateDept(dept)
-    validateHours()
-    validateRate()
-  #add to correct department list  
-    deptWages(DeptNumber,hours,hourlySalary, deptSalary)
-    printTotalSalary(deptSalary)
+def main():
+    again = "Y"
+    dept = 0
+    while again.upper() == "Y":
+        print("You will need to enter the employee's department number, hours worked and hourly salary")
+        printDeptList(deptSalary, deptList)     
+        #Get valid input
+        validateDept(dept)
+        validateHours()
+        validateRate()
+      #add to correct department list  
+        deptWages(DeptNumber,hours,hourlySalary, deptSalary)
+        printTotalSalary(deptSalary)
     
-    again = input("Enter Y to continue")
+        again = input("Enter Y to continue")
+        
+main()
