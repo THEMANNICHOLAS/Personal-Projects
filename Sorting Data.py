@@ -22,8 +22,6 @@ def inputScore():
         return testScoreList
 
 
-
-
 def calculateMeanAndMedian(array):
     array = [int(i) for i in array]
 
@@ -35,35 +33,27 @@ def calculateMeanAndMedian(array):
     print("Sorted array is: ", array)
     print("Mean is " + str(statistics.mean(array)))
     print("Median is " + str(statistics.median(array)))
-
+    
     array.pop(0)
-    array.pop(1)
-    array.pop(2)
-    array.pop(3)
+    array.pop(0)
+    array.pop(0)
+    array.pop(0)
+    
     print("6 Highest Scores Mean and Median: ")
     print("6 Highest Sorted array is: ", array)
     print("Mean is " + str(statistics.mean(array)))
     print("Median is " + str(statistics.median(array)))
-
-
-
-    
-
-
-
-
-
 
 name = input("Input your name.\n")
 print("Would you like to enter your scores? Y for yes, N for no.\n")
 toContinue = input()
 toContinue = toContinue.upper()
 
-
-
 while toContinue == "Y":
     inputScore()
     print(name)
     print("The result is: ")
     calculateMeanAndMedian(testScoreList)
+
+
 
